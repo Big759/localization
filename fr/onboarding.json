@@ -1,15 +1,15 @@
 {
-  "action.skipOnboarding": "Je sais ce que je fait, passer l'introduction",
+  "action.skipOnboarding": "Ignorer l'introduction",
   "action.next": "Suivant",
   "action.back": "Retour",
   "action.finish": "Terminer",
 
   "dismissable_rag_modal": {
-    "description": "Vous pouvez désormais discuter avec vos propres documents grâce à la Génération Augmentée par Récupération (RAG). Voici comment cela fonctionne :",
+    "description": "Vous pouvez désormais discuter avec vos propres documents grâce à la génération augmentée par récupération (RAG). Voici comment cela fonctionne :",
     "instructions": {
       "attach_files": {
         "title": "Joindre des fichiers",
-        "description": "Téléchargez jusqu'à 5 fichiers à la fois, avec une taille totale maximale de 30 Mo. Les formats pris en charge incluent PDF, DOCX, TXT et CSV."
+        "description": "Vous pouvez télécharger jusqu'à 5 fichiers à la fois, pour une taille maximale de 30 Mo. es formats pris en charge incluent PDF, DOCX, TXT et CSV."
       },
       "be_specific": {
         "title": "Soyez précis",
@@ -20,5 +20,23 @@
         "description": "Le LLM analysera votre requête ainsi que les extraits récupérés de vos documents, et tentera de générer une réponse. Expérimentez avec différentes questions pour voir ce qui fonctionne le mieux."
       }
     }
+  },
+
+  "toolUse": {
+    "step_0": {
+      "title": "Bêta : Utilisation d'outils 🛠️ (fonction d'appels)",
+      "text_0": "Certains modèles (par exemple Llama 3.1/3.2, Mistral, Qwen et d'autres) ont été entraînés à utiliser des outils.",
+      "text_1": "Concrètement, cela signifie que vous fournissez un ensemble d'« outils » (signatures de fonctions) au LLM dans un format très particulier, et que le LLM peut décider de les « appeler » ou non en fonction de la requête de l'utilisateur.",
+      "text_2": "Vous pouvez imaginer des cas d'utilisation tels que les requêtes d'une API, l'exécution de code ou tout autre élément pouvant être exprimé sous forme d'appel de fonction."
+    },
+    "step_1": {
+      "title": "Commencer à utiliser l'outil",
+      "toolUseCanWorkWithAnyModel": "Les modèles qui ont été formés à l'utilisation d'outils seront plus performants que les autres, mais vous pouvez essayer d'utiliser des outils avec n'importe quel modèle. Lisez la <customlink>documentation</customlink> pour en savoir plus.\nLes modèles qui ont été formés à l'utilisation d'outils seront signalés par un nouveau badge :",
+      "hasCompatibleModel": "🎉 On dirait que vous avez déjà des modèles avec la prise en charge d'outils !",
+      "downloadRecommendedModel": "Télécharger un modèle qui a été entraîné à l'utilisation d'outils :"
+    },
+    "nextButton": "Suivant",
+    "letsGoButton": "Charger le modèle et démarrer le serveur",
+    "doneButton": "Rejeter"
   }
 }

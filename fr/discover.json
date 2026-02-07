@@ -11,9 +11,9 @@
   "searchSortKey.lastModified/title": "Récemment mis à jour",
   "searchSortKey.createdAt/title": "Récemment créé",
   "download.option.willFitEstimation.caveat": "D'autres facteurs peuvent empêcher son chargement, tels que l'architecture du modèle, l'intégrité du fichier modèle, ou la quantité de mémoire disponible sur votre ordinateur.",
-  "download.option.willFitEstimation.fullGPUOffload/title": "Déchargement complet sur GPU possible",
+  "download.option.willFitEstimation.fullGPUOffload/title": "Déchargement complet sur le GPU possible",
   "download.option.willFitEstimation.fullGPUOffload/description": "Ce modèle pourrait tenir entièrement dans la mémoire de votre GPU. Cela pourrait considérablement accélérer l'inférence.",
-  "download.option.willFitEstimation.partialGPUOffload/title": "Déchargement partiel sur GPU possible",
+  "download.option.willFitEstimation.partialGPUOffload/title": "Déchargement partiel sur le GPU possible",
   "download.option.willFitEstimation.partialGPUOffload/description": "Ce modèle pourrait tenir partiellement dans la mémoire de votre GPU. Cela pourrait souvent accélérer considérablement l'inférence.",
   "download.option.willFitEstimation.fitWithoutGPU/title": "Probablement compatible",
   "download.option.willFitEstimation.fitWithoutGPU/description": "Ce modèle devrait tenir dans la mémoire de votre machine.",
@@ -23,6 +23,7 @@
   "download.option.recommended/description": "En fonction de votre matériel, cette option est recommandée.",
   "download.option.downloaded/title": "Téléchargé",
   "download.option.downloading/title": "Téléchargement ({{progressPercentile}}%)",
+  "failedToStartDownload": "Échec de démarrage du téléchargement",
 
   "feed.action.refresh": "Actualiser le flux"
 }

@@ -24,12 +24,12 @@
   "unnamedChat": "Chat sans nom",
   "emptyFolder": "Le dossier est vide",
 
-  "tokenCount": "Nombre de Tokens",
-  "messageTokenCount": "Nombre de Tokens d'entrée",
-  "tokenCount/hint": "Le nombre de tokens dans le message. Compté en utilisant le tokenizer du modèle actuellement sélectionné.\n\nNécessite que le modèle soit chargé.",
-  "messageTokenCount/hint": "Le nombre de tokens dans le message. Compté en utilisant le tokenizer du modèle actuellement sélectionné.\n\nN'inclut **PAS** une estimation des tokens dans les pièces jointes de fichiers.",
+  "tokenCount": "Nombre de jetons",
+  "messageTokenCount": "Nombre de jetons entrés",
+  "tokenCount/hint": "Le nombre de jetons dans le message. Compté en utilisant le segmentateur de jetons du modèle actuellement sélectionné.\n\nNécessite que le modèle soit chargé.",
+  "messageTokenCount/hint": "Le nombre de jetons dans le message. Compté en utilisant le segmentateur de jetons du modèle actuellement sélectionné.\n\nN'inclut **PAS** une estimation des jetons dans les pièces jointes de fichiers.",
 
-  "notes": "Notes de conversation",
+  "notes": "Notes de la conversation",
   "notes/add/first": "Ajouter une note",
   "notes/add/another": "Ajouter une autre note", 
   "notes/hint": "Enregistrez des notes dans ce chat. Les notes sont uniquement pour votre référence et ne sont pas envoyées au modèle. Tous les changements sont enregistrés automatiquement.",
@@ -39,12 +39,13 @@
   "notes/copyContent": "Copier le contenu de la note",
 
   "actions/sendMessage/error": "Échec de l'envoi du message",
-  "actions/loadModel/error": "Échec du chargement du modèle",
+  "actions/loadModel/error": "🥲 Échec du chargement du modèle",
   "actions/addFile": "[Expérimental] Joindre un fichier à ce message\n(.pdf, texte brut ou .docx)",
-  "actions/changeRole": "Basculer entre les rôles Utilisateur et Assistant.\n\nCela est utile pour orienter la conversation dans une direction spécifique.\n\nPeut être utilisé pour des scénarios de 'apprentissage few-shot' ou 'd'apprentissage en contexte'",
-  "actions/addImage": "Ajouter une image",
+  "actions/addFile/label": "Joindre un fichier",
+  "actions/changeRole": "Basculer entre les rôles Utilisateur et Assistant.\n\nCela est utile pour orienter la conversation dans une direction spécifique.\n\nPeut être utilisé pour des scénarios de 'apprentissage en quelques essais' ou 'd'apprentissage en contexte'",
+  "actions/addImage": "Joindre une image",
   "actions/deleteMessage": "Supprimer le message",
-  "actions/deleteMessage/confirmation": "Êtes-vous sûr de vouloir supprimer ce message?",
+  "actions/deleteMessage/confirmation": "Êtes-vous sûr de vouloir supprimer ce message ?",
   "actions/copyMessage": "Copier le message",
   "actions/editMessage": "Modifier le message",
   "actions/editMessage/cannotEditPreprocessed": "Impossible de modifier les messages prétraités car ils seront écrasés après l'exécution du préprocesseur. Pour modifier le message, soit : \n\n - Basculez sur le message d'origine et modifiez-le à la place, ou\n - Modifiez le préprocesseur pour qu'il produise la sortie souhaitée.",
@@ -58,14 +59,16 @@
   "actions/predictNext/error": "Échec de la génération de la réponse IA",
   "actions/loadLastModel": "Recharger le dernier modèle utilisé",
   "actions/loadLastModel/tooltip": "Cliquez pour charger le modèle qui a été utilisé en dernier avec ce chat:\n\n{{lastModel}}",
-  "actions/loadLastModel/error": "Échec du chargement du dernier modèle utilisé",
+  "actions/loadLastModel/error": "Échec du chargement du dernier modèle utilisé.",
+  "actions/clearLastUsedModel": "Effacer le dernier modèle utilisé",
+  "actions/clearLastUsedModel/error": "Échec de la suppression du dernier modèle utilisé.",
   "actions/continueCurrentModel": "Utiliser le modèle actuel",
   "actions/continueCurrentModel/tooltip": "Modèle actuel : {{currentModel}}",
   "actions/changeToLastUsedModel": "Charger {{lastModel}}",
   "actions/changeToLastUsedModel/error": "Échec du chargement du dernier modèle utilisé",
   "actions/changeToLastUsedModel/tooltip": "Vous avez utilisé un modèle différent la dernière fois que vous avez envoyé un message dans ce chat. Cliquez pour décharger le modèle actuellement sélectionné ({{currentModel}}) et charger le modèle qui a été utilisé en dernier avec ce chat:\n\n{{lastModel}}",
   "actions/switchToLastUsedModel": "Basculer vers {{lastModel}}",
-  "actions/switchToLastUsedModel/tooltip": "Cliquez pour basculer vers le modèle qui a été utilisé en dernier avec ce chat:\n\n{{lastModel}}",
+  "actions/switchToLastUsedModel/tooltip": "Cliquez pour basculer vers le modèle qui a été utilisé en dernier avec ce chat :\n\n{{lastModel}}",
   "actions/loadModel": "Charger un modèle",
   "actions/toggleViewingProcessed/currentlyFalse": "Affichage actuel du message original. Cliquez pour voir le message prétraité.",
   "actions/toggleViewingProcessed/currentlyTrue": "Affichage actuel du message prétraité. Cliquez pour voir le message original.",
@@ -75,10 +78,10 @@
   "editMessageConfirm/keepEditing": "Continuer la modification",
   "editMessageConfirm/save": "Enregistrer",
   "editMessageConfirm/discard": "Annuler les modifications",
-  "tokenCount/totalNotAvailable": "Tokens : {{current}}",
-  "tokenCount/totalAvailable": "Tokens : {{current}}/{{total}}",
+  "tokenCount/totalNotAvailable": "Jetons : {{current}}",
+  "tokenCount/totalAvailable": "Jetons : {{current}}/{{total}}",
   "tokenCount/totalAvailablePercentage": "Le contexte est rempli à {{percentage}}%",
-  "tokenCount/contextOverflow": "Le contexte non traité est plus grand que la limite maximale de tokens du modèle. Selon votre politique de débordement de contexte, le contexte peut être tronqué ou le message peut ne pas être envoyé.",
+  "tokenCount/contextOverflow": "Le contexte non traité est plus grand que la limite maximale de jetons du modèle. Selon votre politique de débordement de contexte, le contexte peut être tronqué ou le message peut ne pas être envoyé.",
   "modelLoader/manualLoadParams/label": "Choisir manuellement les paramètres de chargement du modèle",
   "modelLoader/manualLoadParams/hint/before": "(ou maintenez ",
   "modelLoader/manualLoadParams/hint/after": ")",
@@ -88,7 +91,11 @@
   "actions/createChatAtRoot/error": "Échec de la création du chat à la racine",
   "actions/createFolderAtRoot": "Nouveau Dossier...",
   "actions/createFolderAtRoot/error": "Échec de la création du dossier à la racine",
+  "actions/openInFolder/mac": "Afficher dans le Finder",
+  "actions/openInFolder/pc": "Afficher dans l'Explorateur de fichiers",
+
   "actions/createChat/error": "Échec de la création du chat",
+  "actions/deleteChat/errorTitle": "Échec de la suppression du chat",
 
   "userFile/fileSizeLimit": "La taille limite du fichier est ",
   "userFile/noImageSupport": "Le modèle ne prend pas en charge l'entrée d'images",
@@ -98,7 +105,12 @@
   "userFile/unsupportedFileType": "Type de fichier non pris en charge - seuls les images, PDFs et fichiers .txt sont pris en charge.",
   "userFile/maxFilesPerMessage": "Nombre maximum de fichiers par message atteint. Impossible d'ajouter plus de {{files}} fichiers. ",
   "userFile/maxFileSizePerMessage": "Taille maximale de fichier par message atteinte. Impossible d'ajouter des fichiers plus grands que {{size}}. ",
+  "userFile/maxFileSizePerConversation": "Taille maximale de fichier par conversation atteinte. Impossible d'ajouter des fichiers plus grands que {{size}}. ",
+  "userFile/failedToUploadError/title": "Échec de téléchargement du fichier",
+  "userFile/failedToAddFile/title": "Échec de l'ajout du fichier au chat",
   "errorTitle": "Erreur",
+  "userFile/chatTerminalDocumentsCount_one": "{{count}} document dans le chat",
+  "userFile/chatTerminalDocumentsCount_other": "{{count}} documents dans le chat",
 
   "prediction/busyModel/title": "Le modèle est occupé",
   "prediction/busyModel/message": "Veuillez attendre que le modèle termine et réessayez",
@@ -112,19 +124,44 @@
   "retrieval/actions/clickToExpand": "Cliquez pour développer les étapes intermédiaires",
   "retrieval/actions/clickToCollapse": "Cliquez pour réduire les étapes intermédiaires",
 
-  "style": "Apparence du Chat",
+  "style": "Apparence",
 
   "style/viewMode/markdown": "Markdown",
   "style/viewMode/plaintext": "Texte brut",
-  "style/viewMode/monospace": "Police à espacement fixe",
+  "style/viewMode/monospace": "Espacement fixe",
 
-  "style/fontSize/label": "Taille de police",
+  "speculativeDecodingVisualization/toggle": "Visualiser les jetons provisoires acceptés",
+  "speculativeDecodingVisualization/fromDraftModel_one": "Jeton provisoire accepté",
+  "speculativeDecodingVisualization/fromDraftModel_other": "Jetons provisoires acceptés",
+  "speculativeDecodingVisualization/cannotChangeViewMode": "La sélection du mode d'affichage est désactivée lors de la visualisation des jetons provisoires.",
+
+  "style/fontSize/label": "Taille de la police",
   "style/fontSize/medium": "Par défaut",
   "style/fontSize/large": "Grande",
   "style/fontSize/small": "Petite",
 
-  "topBarActions/duplicateChat": "Dupliquer le chat",
-  "topBarActions/clearChat": "Effacer tous les messages",
+  "style/debugBlocks/label": "Afficher l'écran de débogage",
+
+  "style/thinkingUI/label": "Développer les blocs de raisonnement par défaut",
+  "style/chatFullWidth/label": "Agrandir la fenêtre de discussion à la largeur de la fenêtre",
+
+  "style/chatUtilityMenusShowLabel/label": "Afficher les libellés du menu utilitaire du chat",
+
+  "messageBlocks": {
+    "expandBlockTooltip": "Développer le contenu",
+    "collapseBlockTooltip": "Réduire le contenu",
+    "debug": {
+      "label": "INFORMATIONS DE DÉBOGAGE",
+      "collapseTooltip": "Réduire le bloc d'informations de débogage",
+      "expandTooltip": "Développer le bloc d'informations de débogage"
+    }
+  },
+
+  "chatTabOptions/clearAllMessages": "Effacer tous les messages...",
+  "chatTabOptions/duplicateChat": "Dupliquer le chat",
+
+  "topBarActions/duplicateChat": "Dupliquer",
+  "topBarActions/clearChat": "Tout effacer",
   "topBarActions/clearChatConfirmation": "Êtes-vous sûr de vouloir effacer tous les messages de ce chat ?",
   "topBarActions/clearChatCancel": "Annuler",
   "topBarActions/clearChatDelete": "Tout effacer",
@@ -132,4 +169,82 @@
   "noModels.indexing": "Indexation des fichiers modèles... (cela peut prendre un moment)",
   "noModels.downloading": "Téléchargement de votre premier LLM...",
   "noModels": "Pas encore de LLM ! Téléchargez-en un pour commencer !"
+
+  "plugins": {
+    "pluginTrigger": {
+      "noPlugins": "Plugin",
+      "multiplePlugins": "{{dynamicValue}} plugins"
+    },
+    "pluginSelect": {
+      "title": "Plugins",
+      "dropdown": {
+        "configure": "Configurer",
+        "disable": "Désactiver",
+        "fork": "Bifurquer",
+        "uninstall": "Désinstaller"
+      },
+      "actionButtons": {
+        "create": "Créer",
+        "import": "Importer",
+        "discover": "Découvrir"
+      },
+      "recentlyCreated": {
+        "title": "Plugins récemment créés",
+        "placeholder": "Les plugins que vous créerez apparaîtront ici"
+      },
+      "startRunningDevelopmentPlugin/error": "Échec de démarrage du plugin en mode développement",
+      "stopRunningDevelopmentPlugin/error": "Impossible d'arrêter l'exécution du plugin en mode développement",
+      "forceReInitPlugin/error": "Échec de redémarrage du plugin"
+    },
+    "pluginConfiguration": {
+      "title": "Configuration du plugin",
+      "selectAPlugin": "Sélectionnez un plugin pour modifier ses configurations",
+      "preprocessorAndGenerator": "Ce plugin contient un préprocesseur et un générateur personnalisés.",
+      "generatorOnly": "Ce plugin contient un générateur personnalisé",
+      "preprocessorOnly": "Ce plugin contient un préprocesseur personnalisé"
+    },
+    "instructions": {
+      "runTheFollowing": "Pour exécuter votre plugin, ouvrez un terminal et saisissez",
+      "pushTo": "Partagez votre plugin avec d'autres utilisateurs en le publiant sur le Hub (facultatif)",
+      "createdSuccessfully": "Plugin créé avec succès",
+      "creatingPlugin": "Création du plugin...",
+      "projectFilesTitle": "Fichiers du projet",
+      "buttons": {
+        "documentation": "Documentation",
+        "dismiss": "Rejeter",
+        "publish": "Publier",
+        "openInZed": "Ouvrir dans Zed",
+        "openInVscode": "Ouvrir dans VS Code",
+        "revealInFinder": "Afficher dans le Finder",
+        "openInFileExplorer": "Ouvrir dans l'Explorateur de fichiers"
+      }
+    },
+    "localFork": {
+      "error": "Échec de la création d'une copie locale de développement du plugin."
+    },
+    "restartErrorPlugin/error": "Échec du redémarrage du plugin"
+  },
+
+  "genInfo": {
+    "tokensPerSecond": "{{tokensPerSecond}} jet/sec",
+    "predictedTokensCount": "{{predictedTokensCount}} jetons",
+    "timeToFirstTokenSec": "{{timeToFirstTokenSec}}s du premier jeton",
+    "stopReason": "Raison de l'arrêt : {{stopReason}}",
+    "stopReason.userStopped": "L'utilisateur a interrompu",
+    "stopReason.modelUnloaded": "Modèle déchargé",
+    "stopReason.failed": "Échec de la génération",
+    "stopReason.eosFound": "Jeton de fin détecté",
+    "stopReason.stopStringFound": "Chaîne d'arrêt détectée",
+    "stopReason.toolCalls": "Appels d'outils",
+    "stopReason.maxPredictedTokensReached": "Maximum de jetons prédits atteint",
+    "stopReason.contextLengthReached": "Limite de longueur du contexte atteinte",
+    "speculativeDecodedBy": "Modèle brouillon : {{decodedBy}}",
+    "speculativeDecodingStats": "{{accepted}}/{{total}} jetons du modèle brouillon acceptés ({{percentage}}%)",
+    "speculativeDecodingAcceptedPercentage": "{{percentage}}% des jetons du modèle brouillon acceptés",
+    "speculativeDecodingTooltip": "{{accepted}}/{{total}} jetons du modèle brouillon acceptés"
+  },
+
+  "tabs": {
+    "systemPromptEditorTab.headerLabel": "Édition du prompt système"
+  }
 }

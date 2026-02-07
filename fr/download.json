@@ -1,11 +1,21 @@
 {
   "postDownloadActionExecutor.zipExtraction/status": "Extraction...",
+  "postDownloadActionExecutor.tarGzExtraction/status": "Extraction...",
+  "postDownloadActionExecutor.runtimeIndexerTarGzExtraction/status": "Extraction...",
+  "postDownloadActionExecutor.modifyModelData/status": "Updating model data...",
+  "postDownloadActionExecutor.notification/status": "Notifying user...",
+  "postDownloadActionExecutor.writeString/status": "Writing metadata...",
+  "postDownloadActionExecutor.updateSelectedBackendVersions/status": "Updating selected version...",
+  "postDownloadActionExecutor.extensionPackAutoDeletion/status": "Deleting unused extensions...",
+  "postDownloadActionExecutor.pluginInstall/status": "Installing plugin...",
+  "postDownloadActionExecutor.pluginUninstall/status": "Uninstalling plugin...",
+
   "finalizing": "Finalisation... (cela peut prendre quelques instants)",
   "noOptions": "Aucune option compatible disponible pour le téléchargement",
-  
+
   "deeplink/confirmation/title": "Télécharger le modèle depuis Hugging Face 🤗",
   "deeplink/confirmation/subtitle": "{{modelName}}",
-  "deeplink/confirmation/selectRecommended": "Sélectionner recommandé",
+  "deeplink/confirmation/selectRecommended": "Sélectionner les recommandations",
   "deeplink/confirmation/selectOption": "Sélectionner l'option de téléchargement",
   "deeplink/confirmation/recommendedOption": "Probablement la meilleure option pour la plupart des utilisateurs",
   "deeplink/confirmation/downloadButton": "Télécharger",
@@ -15,9 +25,19 @@
   "deeplink/confirmation/loadInChat": "Charger {{ modelName }} dans une nouvelle discussion",
   "deeplink/error/modelNotFound/title": "Zut, nous n'avons pas pu trouver ce modèle",
   "deeplink/error/modelNotFound/body": "Vérifiez le nom du modèle et envisagez d'essayer une autre option de téléchargement.",
-  "deeplink/actions/trySearching": "essayer de rechergher {{modelName}} sur Hugging Face",
+  "deeplink/actions/trySearching": "Essayer de rechercher {{modelName}} sur Hugging Face",
 
   "downloadsPanel/title": "Téléchargements",
   "downloadsPanel/sectionTitle/ongoing": "En cours",
-  "downloadsPanel/sectionTitle/completed": "Terminé"
+  "downloadsPanel/sectionTitle/completed": "Terminé",
+  "downloadsPanel": {
+    "reveal": {
+      "mac": "Afficher dans le Finder",
+      "mac/error": "Échec de l'affichage dans le Finder",
+      "nonMac": "Afficher dans l'Explorateur de fichiers",
+      "nonMac/error": "Échec de l'affichage dans l'Explorateur de fichiers"
+    },
+    "completed": "Téléchargement terminé",
+    "loadModel": "Charger le modèle"
+  }
 }
